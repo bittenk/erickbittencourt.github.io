@@ -1,94 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erick Bittencourt | Portfólio</title>
+  <meta name="description" content="Portfólio do desenvolvedor front-end Erick Bittencourt para compartilhar projetos e habilidades desenvolvidas.">
 
-    <link rel="stylesheet" href="./src/css/style.css">
-    <meta name="description"
-        content="Poetifólio do desenvolvedor front-end Erick Bittencourt para compartilhar projetos e habilidades adquiridas.">
-    <!--  link bootstrap icons  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="./src/image/icon-remove-preview.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./src/image/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-
 <body>
-    <header class="header">
-
-        <nav class="header__nav">
-            <ul class=" menu menu--principal">
-                <li class="menu__item">
-                    <a class="menu__link active" href="#home">
-                        <span class="menu__text">Home</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#projetos">
-                        <span class="menu__text">Projetos</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#sobre">
-                        <span class="menu__text">Sobre</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#contato">
-                        <span class="menu__text">Contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__brand">
-            <img class="brand__logo" src="./src/image/icon.png" alt="logo-tipo">
-        </div>
-        <div class="header__toggle">
-            <i id="toggleTheme" class="bi bi-sun"></i>
-        </div>
-
-    </header>
-    <h1>Erick Bittencourt</h1>
-
-    <nav class="nav--mobile">
-        <ul class=" menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link active" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i>
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato">
-                    <i class="menu__icon bi bi-envelope"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>
-        </ul>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item"><a class="menu__link active" href="#home"><span class="menu__text">Home</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#projetos"><span class="menu__text">Projetos</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#sobre"><span class="menu__text">Sobre</span></a></li>
+        <li class="menu__item"><a class="menu__link" href="#contato"><span class="menu__text">Contato</span></a></li>
+      </ul>
     </nav>
 
-    <footer>
-        <p>
-            © 2025. Todos os direitos reservados. Erick Bittencourt. Desenvolvido por <a href="https://github.com/bittenk">E.B</a>
-        </p>
-    </footer>
+    <div class="header__brand">
+      <a href="#home"><img class="brand__logo" src="./src/image/icon.png" alt="Logo EB" /></a>
+    </div>
 
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
 
-    <script src="./src/js/main.js"></script>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item"><a class="menu__link active" href="#home"><i class="bi bi-house-door"></i><span>Home</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#projetos"><i class="bi bi-window-stack"></i><span>Projetos</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#sobre"><i class="bi bi-person"></i><span>Sobre</span></a></li>
+      <li class="menu__item"><a class="menu__link" href="#contato"><i class="bi bi-envelope"></i><span>Contato</span></a></li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
+      <p>Erick Bittencourt, Diadema-SP, Desenvolvedor Front-end.</p>
+      <ul class="menu menu--social">
+        <li><a class="menu__link" href="https://github.com/bittenk" target="_blank"><i class="bi bi-github"></i></a></li>
+        <li><a class="menu__link" href="https://www.linkedin.com/in/erick-bittencourt/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+      <a href="#projetos"><button class="btn btn--primary"><span>Ver Projetos</span><i class="bi bi-arrow-down-right"></i></button></a>
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Conhecimento nas principais tecnologias do mercado</h2>
+    <ul class="technologies__list">
+      <li><img src="./src/image/html.png" alt="HTML"></li>
+      <li><img src="./src/image/css.png" alt="CSS"></li>
+      <li><img src="./src/image/js.png" alt="JavaScript"></li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <ul class="card__list">
+        <h2>Realizados com:</h2>
+        <li class="card__item">HTML</li>
+        <li class="card__item">CSS</li>
+        <li class="card__item">JavaScript</li>
+      </ul>
+    </div>
+    <a href="https://github.com/bittenk?tab=repositories" target="_blank">
+      <button class="btn btn--primary">
+        <span>Ver Todos os Projetos</span>
+        <i class="bi bi-arrow-up-right"></i>
+      </button>
+    </a>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img src="./src/image/avatar.png" alt="Foto de Erick" class="about__photo">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Sou programador júnior com foco em desenvolvimento web. Tenho experiência como programador CNC, onde desenvolvi raciocínio técnico e atenção aos detalhes. Estou estudando para atuar como desenvolvedor front-end, com domínio em HTML, CSS e JavaScript.</p>
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Básico</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/erick-bittencourt/" target="_blank"><button class="btn btn--primary"><span>Conecte-se Comigo</span><i class="bi bi-arrow-up-right"></i></button></a>
+          <a href="#"><button class="btn"><span>Currículo</span></button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Engenharia de Software</h4>
+          <span>Outubro 2024 - Matrícula Trancada</span>
+          <div class="about__icons"><i class="bi bi-bank"></i><span>Universidade Estácio</span></div>
+        </div>
+
+        <div class="row2">
+          <h3>Experiências</h3>
+          <h4>Projetos Pessoais</h4>
+          <p>Desenvolvimento de projetos que fortalecem minha base técnica e prática no Front-end.</p>
+        </div>
+
+        <div class="col2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <!-- Curso 1 -->
+            <div class="accordion__item active">
+              <button class="accordion__header start">
+                <span>Versionamento de Código com Git e GitHub</span><i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Digital Innovation One. Jul 2025.</p>
+                <p>Versionamento, repositórios, branches, commit, push/pull, autenticação com token/SSH.</p>
+              </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>Desenvolvimento Colaborativo</span><i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Digital Innovation One. Jul 2025.</p>
+                <p>Metodologias ágeis, Git, GitHub, colaboração em equipe e práticas modernas de trabalho.</p>
+              </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Lógica de Programação</span><i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>Digital Innovation One. Jul 2025.</p>
+                <p>Algoritmos, estruturas de decisão, variáveis, loops e funções com foco em JS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para contatos e novas conexões. Conecte-se comigo!</p>
+    <ul class="menu menu--social">
+      <li><a class="menu__link" href="https://github.com/bittenk" target="_blank"><i class="bi bi-github"></i><span>GitHub</span></a></li>
+      <li><a class="menu__link" href="https://www.linkedin.com/in/erick-bittencourt/" target="_blank"><i class="bi bi-linkedin"></i><span>LinkedIn</span></a></li>
+    </ul>
+    <a href="mailto:erickbittencourt1812@gmail.com"><button class="btn btn--primary"><span class="email">erickbittencourt1812@gmail.com</span></button></a>
+  </section>
+
+  <footer>
+    <p>© 2025. Portfólio desenvolvido para mostrar o desenvolvedor que sou. <a href="https://github.com/bittenk" target="_blank">Erick Bittencourt</a>.</p>
+  </footer>
+
+  <script src="./src/js/main.js"></script>
 </body>
 
 </html>
