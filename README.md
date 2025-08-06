@@ -42,4 +42,4 @@ Você pode visualizar a demonstração do projeto online ou clonar o repositóri
 
 **1. Clone o repositório:**
 ```bash
-git clone [https://github.com/bittenk/erickbittencourt.github.io](https://github.com/bittenk/erickbittencourt.github.io)
+git clone [https://github.com/bittenk/erickbittencourt.github.io]
